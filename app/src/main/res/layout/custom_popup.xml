@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:layout_gravity="center"
+    >
+
+
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Forgot your password"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorWhite"
+            android:textSize="25sp"
+            />
+
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp"
+    android:layout_below="@+id/txtTitle">
+
+
+    <TextView
+        android:id="@+id/txtinstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your email and we will send you a password of your account."
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp" />
+
+
+
+    <EditText
+        android:id="@+id/edtResetEmail"
+        android:drawableLeft="@drawable/ic_email_white"
+        android:hint="Enter your Email"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:drawablePadding="8dp"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/edittext_white_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtinstruction"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtResetEmail"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@+id/edtResetEmail"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:layout_below="@+id/edtResetEmail"
+            android:layout_toRightOf="@+id/buttonSubmit"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>

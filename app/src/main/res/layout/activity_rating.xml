@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RatingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_UserProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/txtHName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RATE THIS RECIPE"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimary"
+            android:layout_marginTop="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="1 Comment for"
+          android:fontFamily="@font/raleway"
+          />
+            <TextView
+                android:id="@+id/txtRName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dal Fry"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/raleway_semibold"
+                android:textColor="@color/colorBlack"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/edtComments"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_layer"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/raleway"
+            android:gravity="start"
+            android:layout_marginRight="20dp"
+            android:hint="Add your comment here"/>
+
+        <Button
+            android:id="@+id/btnRate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="POST"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/custom_button1"
+            />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_comments"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

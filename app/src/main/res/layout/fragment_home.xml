@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   tools:context=".fragments.HomeFragment">
+
+    <FrameLayout
+        android:id="@+id/relativeSlider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            app:ci_drawable="@drawable/ic_dot_white"
+            app:ci_drawable_unselected="@drawable/ic_dot_gray" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeSlider"
+        android:background="@color/colorWhite"
+        android:paddingBottom="55dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/titleRecipeCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Recipe Categories"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorBlack"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_recipeCategory"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/titleRecipeCat"
+            android:layout_gravity="center"
+            android:layout_height="340dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_Progess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/custom_progress_bar"
+            />
+
+        <TextView
+            android:id="@+id/txtProgressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Plese Wait.."
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

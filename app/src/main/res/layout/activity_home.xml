@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:openDrawer="start"
+    >
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/drawerPane"
+        android:background="@color/colorWhite"
+        android:layout_gravity="start">
+
+       <include
+           android:id="@+id/header_layout"
+           layout="@layout/nav_header_home"/>
+
+        <View
+            android:id="@+id/border1"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorGray"
+            android:layout_below="@+id/header_layout"/>
+
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="5dp"
+        android:choiceMode="singleChoice"
+        android:layout_below="@+id/border1"
+        android:divider="@android:color/transparent"
+        android:background="#ffffffff" />
+
+
+        <View
+            android:id="@+id/border2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorGray" />
+
+        <LinearLayout
+            android:id="@+id/logout_layout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorWhite"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgLogout"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:padding="10dp"
+                android:src="@drawable/logout"
+
+                />
+
+            <TextView
+                android:id="@+id/txtLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="Log Out"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+</RelativeLayout>
+

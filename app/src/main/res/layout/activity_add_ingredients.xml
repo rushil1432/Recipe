@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".AddIngredientsActivity">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:background="#E6E6E6">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Put each ingredient in its own line"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp"
+            android:fontFamily="@font/raleway"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(e.g 120 grams)"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredient"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(e.g powdered sugar)"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin1">
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+     <TextView
+         android:id="@+id/txtAdd"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/linearContainer"
+         android:layout_marginTop="10dp"
+         android:gravity="right"
+         android:fontFamily="@font/raleway"
+         android:paddingEnd="15dp"
+         android:text="Add another ingredient"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+
+
+
+<FrameLayout
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="13dp"
+
+    >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_Profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_ChangePhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Change Photo"
+            android:textSize="18sp"
+            android:textColor="@color/colorGray2"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/colorGray2"/>
+
+
+        <EditText
+            android:id="@+id/ediitext_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Email"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/colorGray3"
+            android:backgroundTint="@color/colorGray3"
+
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/colorGray2"/>
+
+        <EditText
+            android:id="@+id/ediitext_firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="First Name"
+            android:paddingBottom="15dp"
+            android:backgroundTint="@color/colorGray3"
+            android:textColorHint="@color/colorGray3"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+           />
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="2">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_weight="1"
+             > -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Middle Name"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/colorGray2"/>
+
+        <EditText
+            android:id="@+id/ediitext_middlename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Middle Name"
+            android:paddingBottom="15dp"
+            android:backgroundTint="@color/colorGray3"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColorHint="@color/colorGray3"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+           />
+
+        <!--    </LinearLayout>
+
+          <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="1"
+               >
+       -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/colorGray2"/>
+
+        <EditText
+            android:id="@+id/ediitext_lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:hint="Last Name"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/colorGray3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/colorGray3"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            />
+
+        <!--  </LinearLayout>
+
+          </LinearLayout> -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/colorGray2"/>
+
+        <EditText
+            android:id="@+id/ediitext_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:hint="Address"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/colorGray3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:backgroundTint="@color/colorGray3"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/colorGray2"/>
+
+        <EditText
+            android:id="@+id/ediitext_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Phone Number"
+            android:paddingBottom="15dp"
+           android:backgroundTint="@color/colorGray3"
+            android:textColorHint="@color/colorGray3"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:inputType="phone"
+           />
+
+
+    </LinearLayout>
+
+
+  <!--  <TextView
+        android:id="@+id/textView_savechanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Save Changes"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"/> -->
+
+</RelativeLayout>

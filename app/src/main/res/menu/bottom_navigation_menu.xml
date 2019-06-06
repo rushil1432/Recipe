@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/my_home"
+        android:title="Home"
+        android:iconTint="@color/colorWhite"
+        android:icon="@drawable/ic_chef_hat"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+
+    <item android:id="@+id/my_favorites"
+        android:title="Favorites"
+        android:icon="@drawable/ic_heart_svg"
+        android:iconTint="@color/colorWhite"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item android:id="@+id/my_empty"
+        android:title=""
+        android:iconTint="@color/colorWhite"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item android:id="@+id/my_cooking"
+        android:title="My Recipe"
+        android:iconTint="@color/colorWhite"
+        android:icon="@drawable/ic_fork"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+    <item android:id="@+id/my_profile"
+        android:title="Profile"
+        android:iconTint="@color/colorWhite"
+        android:icon="@drawable/ic_chef_me"
+        app:showAsAction="ifRoom">
+
+    </item>
+
+
+</menu>

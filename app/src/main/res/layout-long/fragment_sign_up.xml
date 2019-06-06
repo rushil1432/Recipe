@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/linearLayout_signup"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorRecipes"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="16dp"
+            android:background="@drawable/edittext_layer"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/colorRecipes"
+            android:hint="Email"
+            />
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_password"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorRecipes"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edittext_layer"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/colorRecipes"
+            android:hint="Password"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_phone"
+            android:inputType="phone"
+            android:layout_marginTop="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorRecipes"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edittext_layer"
+            android:layout_marginRight="30dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/colorRecipes"
+            android:hint="Phone Number"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btnNewAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/colorWhite"
+        android:text="CREATE NEW ACCOUNT"/>
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MyRecipeDetailsActivity">
+
+        <RelativeLayout
+            android:id="@+id/relative_recipeVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <bg.devlabs.fullscreenvideoview.FullscreenVideoView
+                android:id="@+id/fullscreenVideoView1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:layout_below="@+id/relative_recipeVideo">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.9"
+                        android:textColor="@color/colorBlack"
+                        android:text="ABOUT THE RECIPE"/>
+
+                    <com.sackcentury.shinebuttonlib.ShineButton
+                        android:id="@+id/favButton1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:elevation="10dp"
+                        app:btn_color="@color/colorGray"
+                        app:btn_fill_color="#f26d7d"
+                        app:siShape="@raw/heart" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Preparation Time"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/raleway"/>
+
+                        <TextView
+                            android:id="@+id/txtPreTime1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15 mi"
+                            android:layout_marginTop="2dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/raleway_semibold"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cooking Time"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/raleway"/>
+
+                        <TextView
+                            android:id="@+id/txtCookTime1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15 mi"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/colorBlack"
+                            android:fontFamily="@font/raleway_semibold"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtrecipe_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/raleway"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:text="INGREDIENTS"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <TextView
+                    android:id="@+id/txtServings1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredients for 4 Servings"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/raleway_semibold"/>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_ingredient1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:weightSum="1"
+        >
+
+        <EditText
+            android:id="@+id/edtQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/raleway"
+            android:hint="Quantity"/>
+
+        <EditText
+            android:id="@+id/edtIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/raleway"
+            android:hint="Ingredient"/>
+
+
+        <ImageView
+            android:id="@+id/imgCancel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="5dp"
+            android:layout_gravity="center|right"
+            android:tint="@color/colorBlack"
+            android:src="@drawable/cancel"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
